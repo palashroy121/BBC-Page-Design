@@ -143,17 +143,17 @@ label {
 	font-weight: 400;
 }
 *::-moz-selection {
-	background: #d6b161;
+	background: #3390FF;
 	color: #fff;
 	text-shadow: none;
 }
 ::-moz-selection {
-	background: #444;
+	background: #3390FF;
 	color: #fff;
 	text-shadow: none;
 }
 ::selection {
-	background: #444;
+	background: #3390FF;
 	color: #fff;
 	text-shadow: none;
 }
@@ -189,7 +189,7 @@ label {
 	background: #1696e7 none repeat scroll 0 0;
 	border: medium none;
 	border-radius: 2px;
-	color: #fff;
+	color: #313131;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 13px;
@@ -229,6 +229,17 @@ label {
 }
 .btn-squ:hover {
 	color: #fff;
+}
+.btn.btn-squ-border {
+    border: 1px solid #B80000;
+    transition: .3s;
+    background: none;
+    text-transform: capitalize;
+}
+.btn.btn-squ-border:hover {
+	color: #fff;
+    border: 1px solid transparent;
+    background: #B80000;
 }
 .breadcrumb > .active {
 	color: #888;
@@ -594,4 +605,96 @@ label {
 }
 .footer-bottom p span {
     font-weight: 600;
+}
+
+/* Details */
+.details-cat-link a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #3F3F42;
+    position: relative;
+}
+.details-cat-link a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 4px;
+    background: #B80000;
+}
+.details-head h2 {
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.details-time {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #696969;
+}
+.details-time span {
+    display: inline-block;
+    color: #696969;
+    font-size: 13px;
+    line-height: 19px;
+}
+.details-img img {
+    margin-bottom: 20px;
+}
+.details-text p {
+    color: #3F3F42;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.related-topic {
+    position: relative;
+}
+.related-topic::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #B80000;
+}
+.related-topic-title h3 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.related-topic-btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+.related-story-con h4 {
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 7px;
+}
+.related-story-con span {
+    color: #696969;
+    font-size: 13px;
+    line-height: 19px;
+}
+.related-story-con:hover h4 {
+	color: #B80000;
+	text-decoration: underline;
+}
+.details-right-con h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
+.right-features-con h4 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.right-features-con:hover h4 {
+	color: #B80000;
+	text-decoration: underline;
 }
